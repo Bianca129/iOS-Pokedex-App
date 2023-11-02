@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8407A4182AE40AD10046F2D2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A4172AE40AD10046F2D2 /* AboutView.swift */; };
+		8407A41A2AE40AF60046F2D2 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A4192AE40AF60046F2D2 /* StatsView.swift */; };
+		8407A41C2AE40B0C0046F2D2 /* EvolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */; };
+		84A3C7432AE2F79D004192FE /* nl_moosmann_biancaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */; };
+		84A3C7452AE2F79D004192FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7442AE2F79D004192FE /* ContentView.swift */; };
+		84A3C7472AE2F79F004192FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3C7462AE2F79F004192FE /* Assets.xcassets */; };
+		84A3C74A2AE2F79F004192FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3C7492AE2F79F004192FE /* Preview Assets.xcassets */; };
+		84A3C7542AE2F79F004192FE /* nl_moosmann_biancaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7532AE2F79F004192FE /* nl_moosmann_biancaTests.swift */; };
+		84A3C75E2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C75D2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift */; };
+		84A3C7602AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C75F2AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift */; };
+		84A3C76E2AE2F8AE004192FE /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C76D2AE2F8AE004192FE /* Pokemon.swift */; };
+		84A3C7712AE2F901004192FE /* PokemonSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7702AE2F901004192FE /* PokemonSelected.swift */; };
+		84A3C7742AE2F94B004192FE /* PokemonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7732AE2F94B004192FE /* PokemonImage.swift */; };
+		84A3C7762AE31B5D004192FE /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7752AE31B5D004192FE /* PokemonDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A3C7502AE2F79F004192FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A3C7372AE2F79D004192FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A3C73E2AE2F79D004192FE;
+			remoteInfo = nl.moosmann.bianca;
+		};
+		84A3C75A2AE2F79F004192FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A3C7372AE2F79D004192FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A3C73E2AE2F79D004192FE;
+			remoteInfo = nl.moosmann.bianca;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8407A4172AE40AD10046F2D2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		8407A4192AE40AF60046F2D2 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionView.swift; sourceTree = "<group>"; };
+		84A3C73F2AE2F79D004192FE /* nl.moosmann.bianca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nl.moosmann.bianca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaApp.swift; sourceTree = "<group>"; };
+		84A3C7442AE2F79D004192FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84A3C7462AE2F79F004192FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A3C7492AE2F79F004192FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84A3C74F2AE2F79F004192FE /* nl.moosmann.biancaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nl.moosmann.biancaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3C7532AE2F79F004192FE /* nl_moosmann_biancaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaTests.swift; sourceTree = "<group>"; };
+		84A3C7592AE2F79F004192FE /* nl.moosmann.biancaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nl.moosmann.biancaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3C75D2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaUITests.swift; sourceTree = "<group>"; };
+		84A3C75F2AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84A3C76D2AE2F8AE004192FE /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		84A3C7702AE2F901004192FE /* PokemonSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSelected.swift; sourceTree = "<group>"; };
+		84A3C7732AE2F94B004192FE /* PokemonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImage.swift; sourceTree = "<group>"; };
+		84A3C7752AE31B5D004192FE /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A3C73C2AE2F79D004192FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3C74C2AE2F79F004192FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3C7562AE2F79F004192FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A3C7362AE2F79D004192FE = {
+			isa = PBXGroup;
+			children = (
+				84A3C7412AE2F79D004192FE /* nl.moosmann.bianca */,
+				84A3C7522AE2F79F004192FE /* nl.moosmann.biancaTests */,
+				84A3C75C2AE2F79F004192FE /* nl.moosmann.biancaUITests */,
+				84A3C7402AE2F79D004192FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A3C7402AE2F79D004192FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C73F2AE2F79D004192FE /* nl.moosmann.bianca.app */,
+				84A3C74F2AE2F79F004192FE /* nl.moosmann.biancaTests.xctest */,
+				84A3C7592AE2F79F004192FE /* nl.moosmann.biancaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A3C7412AE2F79D004192FE /* nl.moosmann.bianca */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C7722AE2F932004192FE /* Views */,
+				84A3C76C2AE2F896004192FE /* Api */,
+				84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */,
+				84A3C7442AE2F79D004192FE /* ContentView.swift */,
+				84A3C7462AE2F79F004192FE /* Assets.xcassets */,
+				84A3C7482AE2F79F004192FE /* Preview Content */,
+			);
+			path = nl.moosmann.bianca;
+			sourceTree = "<group>";
+		};
+		84A3C7482AE2F79F004192FE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C7492AE2F79F004192FE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84A3C7522AE2F79F004192FE /* nl.moosmann.biancaTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C7532AE2F79F004192FE /* nl_moosmann_biancaTests.swift */,
+			);
+			path = nl.moosmann.biancaTests;
+			sourceTree = "<group>";
+		};
+		84A3C75C2AE2F79F004192FE /* nl.moosmann.biancaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C75D2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift */,
+				84A3C75F2AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift */,
+			);
+			path = nl.moosmann.biancaUITests;
+			sourceTree = "<group>";
+		};
+		84A3C76C2AE2F896004192FE /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C76D2AE2F8AE004192FE /* Pokemon.swift */,
+				84A3C7702AE2F901004192FE /* PokemonSelected.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		84A3C7722AE2F932004192FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C7732AE2F94B004192FE /* PokemonImage.swift */,
+				84A3C7752AE31B5D004192FE /* PokemonDetailView.swift */,
+				8407A4172AE40AD10046F2D2 /* AboutView.swift */,
+				8407A4192AE40AF60046F2D2 /* StatsView.swift */,
+				8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A3C7632AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.bianca" */;
+			buildPhases = (
+				84A3C73B2AE2F79D004192FE /* Sources */,
+				84A3C73C2AE2F79D004192FE /* Frameworks */,
+				84A3C73D2AE2F79D004192FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nl.moosmann.bianca;
+			productName = nl.moosmann.bianca;
+			productReference = 84A3C73F2AE2F79D004192FE /* nl.moosmann.bianca.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84A3C74E2AE2F79F004192FE /* nl.moosmann.biancaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A3C7662AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaTests" */;
+			buildPhases = (
+				84A3C74B2AE2F79F004192FE /* Sources */,
+				84A3C74C2AE2F79F004192FE /* Frameworks */,
+				84A3C74D2AE2F79F004192FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A3C7512AE2F79F004192FE /* PBXTargetDependency */,
+			);
+			name = nl.moosmann.biancaTests;
+			productName = nl.moosmann.biancaTests;
+			productReference = 84A3C74F2AE2F79F004192FE /* nl.moosmann.biancaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84A3C7582AE2F79F004192FE /* nl.moosmann.biancaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A3C7692AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaUITests" */;
+			buildPhases = (
+				84A3C7552AE2F79F004192FE /* Sources */,
+				84A3C7562AE2F79F004192FE /* Frameworks */,
+				84A3C7572AE2F79F004192FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A3C75B2AE2F79F004192FE /* PBXTargetDependency */,
+			);
+			name = nl.moosmann.biancaUITests;
+			productName = nl.moosmann.biancaUITests;
+			productReference = 84A3C7592AE2F79F004192FE /* nl.moosmann.biancaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A3C7372AE2F79D004192FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					84A3C73E2AE2F79D004192FE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					84A3C74E2AE2F79F004192FE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 84A3C73E2AE2F79D004192FE;
+					};
+					84A3C7582AE2F79F004192FE = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 84A3C73E2AE2F79D004192FE;
+					};
+				};
+			};
+			buildConfigurationList = 84A3C73A2AE2F79D004192FE /* Build configuration list for PBXProject "nl.moosmann.bianca" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A3C7362AE2F79D004192FE;
+			productRefGroup = 84A3C7402AE2F79D004192FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */,
+				84A3C74E2AE2F79F004192FE /* nl.moosmann.biancaTests */,
+				84A3C7582AE2F79F004192FE /* nl.moosmann.biancaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A3C73D2AE2F79D004192FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3C74A2AE2F79F004192FE /* Preview Assets.xcassets in Resources */,
+				84A3C7472AE2F79F004192FE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3C74D2AE2F79F004192FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3C7572AE2F79F004192FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A3C73B2AE2F79D004192FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8407A41C2AE40B0C0046F2D2 /* EvolutionView.swift in Sources */,
+				84A3C7452AE2F79D004192FE /* ContentView.swift in Sources */,
+				8407A4182AE40AD10046F2D2 /* AboutView.swift in Sources */,
+				84A3C7742AE2F94B004192FE /* PokemonImage.swift in Sources */,
+				84A3C7432AE2F79D004192FE /* nl_moosmann_biancaApp.swift in Sources */,
+				8407A41A2AE40AF60046F2D2 /* StatsView.swift in Sources */,
+				84A3C7712AE2F901004192FE /* PokemonSelected.swift in Sources */,
+				84A3C76E2AE2F8AE004192FE /* Pokemon.swift in Sources */,
+				84A3C7762AE31B5D004192FE /* PokemonDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3C74B2AE2F79F004192FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3C7542AE2F79F004192FE /* nl_moosmann_biancaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3C7552AE2F79F004192FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3C7602AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift in Sources */,
+				84A3C75E2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A3C7512AE2F79F004192FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */;
+			targetProxy = 84A3C7502AE2F79F004192FE /* PBXContainerItemProxy */;
+		};
+		84A3C75B2AE2F79F004192FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */;
+			targetProxy = 84A3C75A2AE2F79F004192FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84A3C7612AE2F79F004192FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84A3C7622AE2F79F004192FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A3C7642AE2F79F004192FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nl.moosmann.bianca/Preview Content\"";
+				DEVELOPMENT_TEAM = N6X5848Y66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.biancamoosmann.nl-moosmann-bianca";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84A3C7652AE2F79F004192FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"nl.moosmann.bianca/Preview Content\"";
+				DEVELOPMENT_TEAM = N6X5848Y66;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.biancamoosmann.nl-moosmann-bianca";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84A3C7672AE2F79F004192FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6X5848Y66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.biancamoosmann.nl-moosmann-biancaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nl.moosmann.bianca.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nl.moosmann.bianca";
+			};
+			name = Debug;
+		};
+		84A3C7682AE2F79F004192FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6X5848Y66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.biancamoosmann.nl-moosmann-biancaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nl.moosmann.bianca.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nl.moosmann.bianca";
+			};
+			name = Release;
+		};
+		84A3C76A2AE2F79F004192FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6X5848Y66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.biancamoosmann.nl-moosmann-biancaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nl.moosmann.bianca;
+			};
+			name = Debug;
+		};
+		84A3C76B2AE2F79F004192FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6X5848Y66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.biancamoosmann.nl-moosmann-biancaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nl.moosmann.bianca;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A3C73A2AE2F79D004192FE /* Build configuration list for PBXProject "nl.moosmann.bianca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3C7612AE2F79F004192FE /* Debug */,
+				84A3C7622AE2F79F004192FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A3C7632AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.bianca" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3C7642AE2F79F004192FE /* Debug */,
+				84A3C7652AE2F79F004192FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A3C7662AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3C7672AE2F79F004192FE /* Debug */,
+				84A3C7682AE2F79F004192FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A3C7692AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3C76A2AE2F79F004192FE /* Debug */,
+				84A3C76B2AE2F79F004192FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A3C7372AE2F79D004192FE /* Project object */;
+}
