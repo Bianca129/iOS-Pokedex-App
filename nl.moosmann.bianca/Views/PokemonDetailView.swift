@@ -1,21 +1,20 @@
-//
-//  PokemonDetailView.swift
-//  nl.moosmann.bianca
-//
-//  Created by admin on 10/20/23.
-//
+// PokemonDetailView.swift
+// nl.moosmann.bianca
+// Created by admin on 10/20/23.
 
 import Foundation
 import SwiftUI
-
-
 
 struct PokemonDetailView: View {
     let pokemon: PokemonEntry
     @State private var detailPokemon: DetailPokemon?
     @State private var selectedTab: Tab = .About
-    
+    @State private var isLiked: Bool = false
 
+    init(pokemon: PokemonEntry) {
+        self.pokemon = pokemon
+        _isLiked = State(initialValue: UserDefaults.standard.bool(forKey: "liked_\(pokemon.name)"))
+    }
 
     enum Tab: String, CaseIterable {
         case About
@@ -24,96 +23,73 @@ struct PokemonDetailView: View {
     }
 
     var body: some View {
-            VStack {
-                if let detailPokemon = detailPokemon {
-
-                    LazyHGrid(rows: [GridItem(.adaptive(minimum: 30), spacing: 5)], spacing: 5) {
-                        ForEach(detailPokemon.abilities, id: \.slot) { ability in
-                            Button(action: {
-                                // Aktion ausführen, wenn auf den Button geklickt wird
-                                print("Button tapped for ability: \(ability.ability.name)")
-                            }) {
-                                Text(ability.ability.name)
-                                    .padding(10)
-                                    .background(Color.blue)
-                                    .foregroundColor(.white)
-                                    .cornerRadius(10)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.blue, lineWidth: 2)
-                                    )
-                            }
-                            .frame(height: 20) // Hier legst du die Höhe der Buttons fest, passe sie nach Bedarf an
+        VStack {
+            if let detailPokemon = detailPokemon {
+                LazyHGrid(rows: [GridItem(.adaptive(minimum: 30), spacing: 5)], spacing: 5) {
+                    ForEach(detailPokemon.types, id: \.slot) { type in
+                        Button(action: {
+                            // Action to perform when the button is tapped
+                        }) {
+                            Text(type.type.name.capitalized)
+                                .padding(10)
+                                .background(typeBackgroundColor(for: type.type.name))
+                                .foregroundColor(.white)
+                                .cornerRadius(10)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(typeBackgroundColor(for: type.type.name), lineWidth: 2)
+                                )
                         }
+                        .frame(height: 20)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading) // Die Zeile erstreckt sich über die gesamte Breite und wird linksbündig ausgerichtet
-                    .frame(maxHeight: 50) // Hier begrenzen Sie die maximale Höhe der Zeile
-                    .padding(16)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .frame(maxHeight: 50)
+                .padding(16)
 
-                    
-                    
-                    PokemonImageView(imageLink: detailPokemon.sprites.other.officialArtwork.front_default)
+                PokemonImageView(imageLink: detailPokemon.sprites.other.officialArtwork.front_default)
+                    .padding(0)
 
-                        //
-                        //.frame(width: 400, height: 250)
-                        .padding(0)
-                        //.border(Color.black, width: 2)
-
-                    
                 TabBar(tabs: Tab.allCases, selectedTab: $selectedTab)
-
                 TabView(selection: $selectedTab) {
                     AboutView(pokemon: pokemon, detailPokemon: detailPokemon)
                         .tag(Tab.About)
-
                     StatsView(detailPokemon: detailPokemon)
                         .tag(Tab.Stats)
-
                     EvolutionView(detailPokemon: detailPokemon)
                         .tag(Tab.Evolution)
-                     
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                
-                } else {
-                    ProgressView("Loading...")
-                }
-                
+            } else {
+                ProgressView("Loading...")
             }
-            
-            //.padding(.leading, 0)
-
-
+        }
         .navigationBarTitle((pokemon.name.capitalized))
+        .navigationBarItems(trailing: HStack {
+            Button(action: {
+                // Action for the heart symbol
+                isLiked.toggle()
+                UserDefaults.standard.set(isLiked, forKey: "liked_\(pokemon.name)")
+            }) {
+                Image(systemName: isLiked ? "heart.fill" : "heart")
+            }
+            .foregroundColor(isLiked ? .red : .gray)
+        })
         .onAppear {
             getDetailInfoForPokemon()
         }
-        //.background(LinearGradient(gradient: Gradient(colors: [.blue, .clear]), startPoint: .top, endPoint: .init(x: 0.5, y: 1/2)))
-        
-       
-
-
-
+        .background(Color(red: 237/255, green: 246/255, blue: 255/255))
     }
-    
-        
-    
+
     func getDetailInfoForPokemon() {
-        print("Fetching data for \(pokemon.name) from URL: \(pokemon.url)")
         let api = PokeApi()
         api.getDetailsForPokemon(withURL: pokemon.url) { detailPokemon in
             if let detailPokemon = detailPokemon {
                 self.detailPokemon = detailPokemon
-                print("Data loaded successfully")
-            } else {
-                print("Failed to load data")
-                // Fehlerbehandlung hier
             }
         }
     }
-
 }
-
 
 struct TabBar: View {
     let tabs: [PokemonDetailView.Tab]
@@ -132,15 +108,14 @@ struct TabBar: View {
                     .overlay(
                         Rectangle()
                             .frame(height: 2)
-                            .foregroundColor(selectedTab == tab ? .blue : .clear)
+                            .foregroundColor(selectedTab == tab ? .purple : .clear)
                             .offset(y: 15)
                     )
             }
         }
-        .padding(.horizontal, 16) // Fügt einen Abstand von 16 Einheiten am rechten und linken Bildschirmrand hinzu
+        .padding(.horizontal, 16)
     }
 }
-
 
 struct PokemonImageView: View {
     var imageLink: String
@@ -152,87 +127,54 @@ struct PokemonImageView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
             } else if phase.error != nil {
-                // Zeige ein Platzhalterbild oder eine Fehlermeldung an, falls das Laden fehlschlägt
                 Text("Image Load Error")
             } else {
-                // Zeige ein Lade- oder Platzhalterbild an, während das Bild geladen wird
                 ProgressView()
             }
         }
     }
 }
 
-
-
-
-
-
-
-/*
-struct PokemonDetailView: View {
-    let pokemon: PokemonEntry
-    @State private var detailPokemon: DetailPokemon?
-    
-    var body: some View {
-        VStack {
-            if let detailPokemon = detailPokemon {
-                
-                LazyHGrid(rows: [GridItem(.flexible())], spacing: 10) {
-                    ForEach(detailPokemon.abilities, id: \.slot) { ability in
-                        Button(action: {
-                            // Aktion ausführen, wenn auf den Button geklickt wird
-                            print("Button tapped for ability: \(ability.ability.name)")
-                        }) {
-                            Text(ability.ability.name)
-                                .padding(10)
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(10)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 10)
-                                        .stroke(Color.blue, lineWidth: 2)
-                                )
-                        }
-                    }
-                }
-                
-                PokemonImageView(imageLink: detailPokemon.sprites.front_default ?? "")
-                
-                
-                    Text("Name: \(pokemon.name.capitalized)")
-                    //Text("ID: \(pokemon.id)")
-                    Text("Height: \(detailPokemon.height)")
-                    Text("Weight: \(detailPokemon.weight)")
-
-            } else {
-                Text("Loading...") // Zeige "Loading..." an, während die Detailinformationen abgerufen werden
-            }
-        }
-        .navigationBarTitle((pokemon.name.capitalized))
-        .onAppear {
-            // Lade Detailinformationen, wenn die Ansicht erscheint
-            getDetailInfoForPokemon()
-        }
+func typeBackgroundColor(for typeName: String) -> Color {
+    let lowercaseTypeName = typeName.lowercased()
+    switch lowercaseTypeName {
+    case "normal":
+        return Color.gray
+    case "fighting":
+        return Color.red
+    case "flying":
+        return Color.blue
+    case "poison":
+        return Color.purple
+    case "ground":
+        return Color.brown
+    case "rock":
+        return Color.gray
+    case "bug":
+        return Color.green
+    case "ghost":
+        return Color.purple
+    case "steel":
+        return Color.gray
+    case "fire":
+        return Color.red
+    case "water":
+        return Color.blue
+    case "grass":
+        return Color.green
+    case "electric":
+        return Color.yellow
+    case "psychic":
+        return Color.pink
+    case "ice":
+        return Color.blue
+    case "dragon":
+        return Color.blue
+    case "dark":
+        return Color.gray
+    case "fairy":
+        return Color.pink
+    default:
+        return Color.gray
     }
-    
-    func getDetailInfoForPokemon() {
-        let api = PokeApi()
-        api.getDetailsForPokemon(withURL: pokemon.url) { detailPokemon in
-            if let detailPokemon = detailPokemon {
-                // Die Detailinformationen wurden erfolgreich abgerufen
-                self.detailPokemon = detailPokemon
-            } else {
-                // Fehler beim Abrufen der Detailinformationen
-                // Du kannst hier entsprechende Fehlerbehandlung hinzufügen
-            }
-        }
-    }
-}*/
-
-
-
-
-
-
-
-
+}

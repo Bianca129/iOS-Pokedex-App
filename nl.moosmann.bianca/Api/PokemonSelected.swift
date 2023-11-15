@@ -11,7 +11,7 @@ struct OfficialArtwork: Codable {
     let front_default: String
 }
 
-struct PokemonSelected : Codable {
+struct PokemonSelected: Codable {
     var sprites: PokemonSprites
     var weight: Int
 }
@@ -29,19 +29,20 @@ struct PokemonSprites: Codable {
     }
 }
 
-class PokemonSelectedApi  {
+class PokemonSelectedApi {
+    // Fetch official artwork for a given URL
     func getOfficialArtwork(url: String, completion: @escaping (OfficialArtwork?) -> ()) {
         guard let url = URL(string: url) else {
             completion(nil)
             return
         }
-        
+
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else {
                 completion(nil)
                 return
             }
-            
+
             do {
                 let officialArtwork = try JSONDecoder().decode(OfficialArtwork.self, from: data)
                 completion(officialArtwork)
@@ -50,15 +51,16 @@ class PokemonSelectedApi  {
             }
         }.resume()
     }
-    
+
+    // Fetch sprite for a given URL
     func getSprite(url: String, completion: @escaping (PokemonSprites) -> ()) {
         guard let url = URL(string: url) else { return }
-        
+
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
-            
+
             let pokemonSprite = try! JSONDecoder().decode(PokemonSelected.self, from: data)
-            
+
             DispatchQueue.main.async {
                 completion(pokemonSprite.sprites)
             }

@@ -12,7 +12,6 @@ struct AboutView: View {
     let pokemon: PokemonEntry
     let detailPokemon: DetailPokemon
 
-    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
@@ -74,24 +73,6 @@ struct AboutView: View {
             .padding(.top, 20)
         }
     }
-
-
-    
-    /*
-    var body: some View {
-        List {
-            Section() {
-                TableRow(label: "Name", value: pokemon.name.capitalized)
-                //TableRow(label: "ID", value: String(pokemon.id))
-                TableRow(label: "Base", value: String(detailPokemon.base_experience))
-                TableRow(label: "Weight", value: String(detailPokemon.weight))
-                TableRow(label: "Height", value: String(detailPokemon.height))
-                TableRow(label: "Types", value: detailPokemon.types.map { $0.type.name }.joined(separator: ", "))
-                TableRow(label: "Abilities", value: detailPokemon.abilities.map { $0.ability.name }.joined(separator: ", "))
-            }
-        }
-    }
-     */
 }
 
 struct TableRow: View {

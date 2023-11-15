@@ -10,6 +10,7 @@
 		8407A4182AE40AD10046F2D2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A4172AE40AD10046F2D2 /* AboutView.swift */; };
 		8407A41A2AE40AF60046F2D2 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A4192AE40AF60046F2D2 /* StatsView.swift */; };
 		8407A41C2AE40B0C0046F2D2 /* EvolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */; };
+		8407A41E2AF70D9A0046F2D2 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A41D2AF70D9A0046F2D2 /* Favorites.swift */; };
 		84A3C7432AE2F79D004192FE /* nl_moosmann_biancaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */; };
 		84A3C7452AE2F79D004192FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7442AE2F79D004192FE /* ContentView.swift */; };
 		84A3C7472AE2F79F004192FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3C7462AE2F79F004192FE /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		8407A4172AE40AD10046F2D2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		8407A4192AE40AF60046F2D2 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionView.swift; sourceTree = "<group>"; };
+		8407A41D2AF70D9A0046F2D2 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 		84A3C73F2AE2F79D004192FE /* nl.moosmann.bianca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nl.moosmann.bianca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaApp.swift; sourceTree = "<group>"; };
 		84A3C7442AE2F79D004192FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				8407A4172AE40AD10046F2D2 /* AboutView.swift */,
 				8407A4192AE40AF60046F2D2 /* StatsView.swift */,
 				8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */,
+				8407A41D2AF70D9A0046F2D2 /* Favorites.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				8407A41C2AE40B0C0046F2D2 /* EvolutionView.swift in Sources */,
 				84A3C7452AE2F79D004192FE /* ContentView.swift in Sources */,
 				8407A4182AE40AD10046F2D2 /* AboutView.swift in Sources */,
+				8407A41E2AF70D9A0046F2D2 /* Favorites.swift in Sources */,
 				84A3C7742AE2F94B004192FE /* PokemonImage.swift in Sources */,
 				84A3C7432AE2F79D004192FE /* nl_moosmann_biancaApp.swift in Sources */,
 				8407A41A2AE40AF60046F2D2 /* StatsView.swift in Sources */,
