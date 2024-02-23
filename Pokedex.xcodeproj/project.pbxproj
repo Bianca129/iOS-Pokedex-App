@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63D606C62B572DE300C5E818 /* typeBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D606C52B572DE300C5E818 /* typeBackgroundColor.swift */; };
+		63D606C82B572E4700C5E818 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D606C72B572E4700C5E818 /* TabBar.swift */; };
+		63D606CA2B572E6B00C5E818 /* PokemonImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D606C92B572E6B00C5E818 /* PokemonImageView.swift */; };
 		8407A4182AE40AD10046F2D2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A4172AE40AD10046F2D2 /* AboutView.swift */; };
 		8407A41A2AE40AF60046F2D2 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A4192AE40AF60046F2D2 /* StatsView.swift */; };
 		8407A41C2AE40B0C0046F2D2 /* EvolutionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */; };
-		8407A41E2AF70D9A0046F2D2 /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A41D2AF70D9A0046F2D2 /* Favorites.swift */; };
+		8407A41E2AF70D9A0046F2D2 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407A41D2AF70D9A0046F2D2 /* FavoritesView.swift */; };
+		849C29B42B17B7DA009170B5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 849C29B62B17B7DA009170B5 /* Localizable.strings */; };
+		849C29BC2B2F9DE7009170B5 /* DetailPokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C29BB2B2F9DE7009170B5 /* DetailPokemon.swift */; };
+		849C29BE2B2F9E1B009170B5 /* Evolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C29BD2B2F9E1B009170B5 /* Evolution.swift */; };
+		849C29C02B2F9F1B009170B5 /* PokeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C29BF2B2F9F1B009170B5 /* PokeApi.swift */; };
+		849C29C22B2FA1C7009170B5 /* Progressbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C29C12B2FA1C7009170B5 /* Progressbar.swift */; };
+		849C29C42B2FA304009170B5 /* PokemonSelectedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C29C32B2FA304009170B5 /* PokemonSelectedModel.swift */; };
+		849C29C62B2FA444009170B5 /* PokemonGridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C29C52B2FA444009170B5 /* PokemonGridItem.swift */; };
 		84A3C7432AE2F79D004192FE /* nl_moosmann_biancaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */; };
 		84A3C7452AE2F79D004192FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7442AE2F79D004192FE /* ContentView.swift */; };
 		84A3C7472AE2F79F004192FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3C7462AE2F79F004192FE /* Assets.xcassets */; };
@@ -18,10 +28,10 @@
 		84A3C7542AE2F79F004192FE /* nl_moosmann_biancaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7532AE2F79F004192FE /* nl_moosmann_biancaTests.swift */; };
 		84A3C75E2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C75D2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift */; };
 		84A3C7602AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C75F2AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift */; };
-		84A3C76E2AE2F8AE004192FE /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C76D2AE2F8AE004192FE /* Pokemon.swift */; };
+		84A3C76E2AE2F8AE004192FE /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C76D2AE2F8AE004192FE /* PokemonModel.swift */; };
 		84A3C7712AE2F901004192FE /* PokemonSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7702AE2F901004192FE /* PokemonSelected.swift */; };
 		84A3C7742AE2F94B004192FE /* PokemonImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7732AE2F94B004192FE /* PokemonImage.swift */; };
-		84A3C7762AE31B5D004192FE /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7752AE31B5D004192FE /* PokemonDetailView.swift */; };
+		84A3C7762AE31B5D004192FE /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3C7752AE31B5D004192FE /* PokemonDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,24 +52,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63D606C52B572DE300C5E818 /* typeBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = typeBackgroundColor.swift; sourceTree = "<group>"; };
+		63D606C72B572E4700C5E818 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		63D606C92B572E6B00C5E818 /* PokemonImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageView.swift; sourceTree = "<group>"; };
 		8407A4172AE40AD10046F2D2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		8407A4192AE40AF60046F2D2 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvolutionView.swift; sourceTree = "<group>"; };
-		8407A41D2AF70D9A0046F2D2 /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
-		84A3C73F2AE2F79D004192FE /* nl.moosmann.bianca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nl.moosmann.bianca.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8407A41D2AF70D9A0046F2D2 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		849C29B52B17B7DA009170B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		849C29B72B17BA09009170B5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		849C29BB2B2F9DE7009170B5 /* DetailPokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokemon.swift; sourceTree = "<group>"; };
+		849C29BD2B2F9E1B009170B5 /* Evolution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evolution.swift; sourceTree = "<group>"; };
+		849C29BF2B2F9F1B009170B5 /* PokeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeApi.swift; sourceTree = "<group>"; };
+		849C29C12B2FA1C7009170B5 /* Progressbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progressbar.swift; sourceTree = "<group>"; };
+		849C29C32B2FA304009170B5 /* PokemonSelectedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSelectedModel.swift; sourceTree = "<group>"; };
+		849C29C52B2FA444009170B5 /* PokemonGridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonGridItem.swift; sourceTree = "<group>"; };
+		84A3C73F2AE2F79D004192FE /* 721042.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 721042.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaApp.swift; sourceTree = "<group>"; };
 		84A3C7442AE2F79D004192FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84A3C7462AE2F79F004192FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A3C7492AE2F79F004192FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		84A3C74F2AE2F79F004192FE /* nl.moosmann.biancaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nl.moosmann.biancaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3C74F2AE2F79F004192FE /* 721042Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 721042Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A3C7532AE2F79F004192FE /* nl_moosmann_biancaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaTests.swift; sourceTree = "<group>"; };
-		84A3C7592AE2F79F004192FE /* nl.moosmann.biancaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nl.moosmann.biancaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3C7592AE2F79F004192FE /* 721042UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 721042UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A3C75D2AE2F79F004192FE /* nl_moosmann_biancaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaUITests.swift; sourceTree = "<group>"; };
 		84A3C75F2AE2F79F004192FE /* nl_moosmann_biancaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nl_moosmann_biancaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		84A3C76D2AE2F8AE004192FE /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		84A3C76D2AE2F8AE004192FE /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		84A3C7702AE2F901004192FE /* PokemonSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSelected.swift; sourceTree = "<group>"; };
 		84A3C7732AE2F94B004192FE /* PokemonImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImage.swift; sourceTree = "<group>"; };
-		84A3C7752AE31B5D004192FE /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
+		84A3C7752AE31B5D004192FE /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849C29B82B2F9D66009170B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84A3C76D2AE2F8AE004192FE /* PokemonModel.swift */,
+				849C29BB2B2F9DE7009170B5 /* DetailPokemon.swift */,
+				849C29BD2B2F9E1B009170B5 /* Evolution.swift */,
+				849C29C32B2FA304009170B5 /* PokemonSelectedModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		84A3C7362AE2F79D004192FE = {
 			isa = PBXGroup;
 			children = (
@@ -100,9 +132,9 @@
 		84A3C7402AE2F79D004192FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84A3C73F2AE2F79D004192FE /* nl.moosmann.bianca.app */,
-				84A3C74F2AE2F79F004192FE /* nl.moosmann.biancaTests.xctest */,
-				84A3C7592AE2F79F004192FE /* nl.moosmann.biancaUITests.xctest */,
+				84A3C73F2AE2F79D004192FE /* 721042.app */,
+				84A3C74F2AE2F79F004192FE /* 721042Tests.xctest */,
+				84A3C7592AE2F79F004192FE /* 721042UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,12 +142,15 @@
 		84A3C7412AE2F79D004192FE /* nl.moosmann.bianca */ = {
 			isa = PBXGroup;
 			children = (
+				63D606C52B572DE300C5E818 /* typeBackgroundColor.swift */,
+				849C29B82B2F9D66009170B5 /* Models */,
 				84A3C7722AE2F932004192FE /* Views */,
 				84A3C76C2AE2F896004192FE /* Api */,
 				84A3C7422AE2F79D004192FE /* nl_moosmann_biancaApp.swift */,
 				84A3C7442AE2F79D004192FE /* ContentView.swift */,
 				84A3C7462AE2F79F004192FE /* Assets.xcassets */,
 				84A3C7482AE2F79F004192FE /* Preview Content */,
+				849C29B62B17B7DA009170B5 /* Localizable.strings */,
 			);
 			path = nl.moosmann.bianca;
 			sourceTree = "<group>";
@@ -148,7 +183,7 @@
 		84A3C76C2AE2F896004192FE /* Api */ = {
 			isa = PBXGroup;
 			children = (
-				84A3C76D2AE2F8AE004192FE /* Pokemon.swift */,
+				849C29BF2B2F9F1B009170B5 /* PokeApi.swift */,
 				84A3C7702AE2F901004192FE /* PokemonSelected.swift */,
 			);
 			path = Api;
@@ -157,12 +192,16 @@
 		84A3C7722AE2F932004192FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				849C29C52B2FA444009170B5 /* PokemonGridItem.swift */,
+				63D606C72B572E4700C5E818 /* TabBar.swift */,
 				84A3C7732AE2F94B004192FE /* PokemonImage.swift */,
-				84A3C7752AE31B5D004192FE /* PokemonDetailView.swift */,
+				84A3C7752AE31B5D004192FE /* PokemonDetail.swift */,
 				8407A4172AE40AD10046F2D2 /* AboutView.swift */,
 				8407A4192AE40AF60046F2D2 /* StatsView.swift */,
 				8407A41B2AE40B0C0046F2D2 /* EvolutionView.swift */,
-				8407A41D2AF70D9A0046F2D2 /* Favorites.swift */,
+				8407A41D2AF70D9A0046F2D2 /* FavoritesView.swift */,
+				849C29C12B2FA1C7009170B5 /* Progressbar.swift */,
+				63D606C92B572E6B00C5E818 /* PokemonImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,9 +209,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */ = {
+		84A3C73E2AE2F79D004192FE /* 721042 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84A3C7632AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.bianca" */;
+			buildConfigurationList = 84A3C7632AE2F79F004192FE /* Build configuration list for PBXNativeTarget "721042" */;
 			buildPhases = (
 				84A3C73B2AE2F79D004192FE /* Sources */,
 				84A3C73C2AE2F79D004192FE /* Frameworks */,
@@ -182,14 +221,14 @@
 			);
 			dependencies = (
 			);
-			name = nl.moosmann.bianca;
+			name = 721042;
 			productName = nl.moosmann.bianca;
-			productReference = 84A3C73F2AE2F79D004192FE /* nl.moosmann.bianca.app */;
+			productReference = 84A3C73F2AE2F79D004192FE /* 721042.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84A3C74E2AE2F79F004192FE /* nl.moosmann.biancaTests */ = {
+		84A3C74E2AE2F79F004192FE /* 721042Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84A3C7662AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaTests" */;
+			buildConfigurationList = 84A3C7662AE2F79F004192FE /* Build configuration list for PBXNativeTarget "721042Tests" */;
 			buildPhases = (
 				84A3C74B2AE2F79F004192FE /* Sources */,
 				84A3C74C2AE2F79F004192FE /* Frameworks */,
@@ -200,14 +239,14 @@
 			dependencies = (
 				84A3C7512AE2F79F004192FE /* PBXTargetDependency */,
 			);
-			name = nl.moosmann.biancaTests;
+			name = 721042Tests;
 			productName = nl.moosmann.biancaTests;
-			productReference = 84A3C74F2AE2F79F004192FE /* nl.moosmann.biancaTests.xctest */;
+			productReference = 84A3C74F2AE2F79F004192FE /* 721042Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		84A3C7582AE2F79F004192FE /* nl.moosmann.biancaUITests */ = {
+		84A3C7582AE2F79F004192FE /* 721042UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84A3C7692AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaUITests" */;
+			buildConfigurationList = 84A3C7692AE2F79F004192FE /* Build configuration list for PBXNativeTarget "721042UITests" */;
 			buildPhases = (
 				84A3C7552AE2F79F004192FE /* Sources */,
 				84A3C7562AE2F79F004192FE /* Frameworks */,
@@ -218,9 +257,9 @@
 			dependencies = (
 				84A3C75B2AE2F79F004192FE /* PBXTargetDependency */,
 			);
-			name = nl.moosmann.biancaUITests;
+			name = 721042UITests;
 			productName = nl.moosmann.biancaUITests;
-			productReference = 84A3C7592AE2F79F004192FE /* nl.moosmann.biancaUITests.xctest */;
+			productReference = 84A3C7592AE2F79F004192FE /* 721042UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -246,22 +285,23 @@
 					};
 				};
 			};
-			buildConfigurationList = 84A3C73A2AE2F79D004192FE /* Build configuration list for PBXProject "nl.moosmann.bianca" */;
+			buildConfigurationList = 84A3C73A2AE2F79D004192FE /* Build configuration list for PBXProject "721042" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 84A3C7362AE2F79D004192FE;
 			productRefGroup = 84A3C7402AE2F79D004192FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */,
-				84A3C74E2AE2F79F004192FE /* nl.moosmann.biancaTests */,
-				84A3C7582AE2F79F004192FE /* nl.moosmann.biancaUITests */,
+				84A3C73E2AE2F79D004192FE /* 721042 */,
+				84A3C74E2AE2F79F004192FE /* 721042Tests */,
+				84A3C7582AE2F79F004192FE /* 721042UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A3C74A2AE2F79F004192FE /* Preview Assets.xcassets in Resources */,
+				849C29B42B17B7DA009170B5 /* Localizable.strings in Resources */,
 				84A3C7472AE2F79F004192FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,16 +338,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849C29C02B2F9F1B009170B5 /* PokeApi.swift in Sources */,
 				8407A41C2AE40B0C0046F2D2 /* EvolutionView.swift in Sources */,
+				849C29BC2B2F9DE7009170B5 /* DetailPokemon.swift in Sources */,
 				84A3C7452AE2F79D004192FE /* ContentView.swift in Sources */,
+				849C29C22B2FA1C7009170B5 /* Progressbar.swift in Sources */,
+				849C29C42B2FA304009170B5 /* PokemonSelectedModel.swift in Sources */,
+				849C29BE2B2F9E1B009170B5 /* Evolution.swift in Sources */,
 				8407A4182AE40AD10046F2D2 /* AboutView.swift in Sources */,
-				8407A41E2AF70D9A0046F2D2 /* Favorites.swift in Sources */,
+				8407A41E2AF70D9A0046F2D2 /* FavoritesView.swift in Sources */,
+				63D606C82B572E4700C5E818 /* TabBar.swift in Sources */,
+				63D606CA2B572E6B00C5E818 /* PokemonImageView.swift in Sources */,
 				84A3C7742AE2F94B004192FE /* PokemonImage.swift in Sources */,
 				84A3C7432AE2F79D004192FE /* nl_moosmann_biancaApp.swift in Sources */,
 				8407A41A2AE40AF60046F2D2 /* StatsView.swift in Sources */,
 				84A3C7712AE2F901004192FE /* PokemonSelected.swift in Sources */,
-				84A3C76E2AE2F8AE004192FE /* Pokemon.swift in Sources */,
-				84A3C7762AE31B5D004192FE /* PokemonDetailView.swift in Sources */,
+				84A3C76E2AE2F8AE004192FE /* PokemonModel.swift in Sources */,
+				849C29C62B2FA444009170B5 /* PokemonGridItem.swift in Sources */,
+				84A3C7762AE31B5D004192FE /* PokemonDetail.swift in Sources */,
+				63D606C62B572DE300C5E818 /* typeBackgroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,21 +382,34 @@
 /* Begin PBXTargetDependency section */
 		84A3C7512AE2F79F004192FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */;
+			target = 84A3C73E2AE2F79D004192FE /* 721042 */;
 			targetProxy = 84A3C7502AE2F79F004192FE /* PBXContainerItemProxy */;
 		};
 		84A3C75B2AE2F79F004192FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84A3C73E2AE2F79D004192FE /* nl.moosmann.bianca */;
+			target = 84A3C73E2AE2F79D004192FE /* 721042 */;
 			targetProxy = 84A3C75A2AE2F79F004192FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		849C29B62B17B7DA009170B5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849C29B52B17B7DA009170B5 /* en */,
+				849C29B72B17BA09009170B5 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		84A3C7612AE2F79F004192FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -407,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -531,7 +595,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nl.moosmann.bianca.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nl.moosmann.bianca";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/721042.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/721042";
 			};
 			name = Debug;
 		};
@@ -551,7 +615,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nl.moosmann.bianca.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/nl.moosmann.bianca";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/721042.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/721042";
 			};
 			name = Release;
 		};
@@ -594,7 +658,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84A3C73A2AE2F79D004192FE /* Build configuration list for PBXProject "nl.moosmann.bianca" */ = {
+		84A3C73A2AE2F79D004192FE /* Build configuration list for PBXProject "721042" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84A3C7612AE2F79F004192FE /* Debug */,
@@ -603,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84A3C7632AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.bianca" */ = {
+		84A3C7632AE2F79F004192FE /* Build configuration list for PBXNativeTarget "721042" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84A3C7642AE2F79F004192FE /* Debug */,
@@ -612,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84A3C7662AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaTests" */ = {
+		84A3C7662AE2F79F004192FE /* Build configuration list for PBXNativeTarget "721042Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84A3C7672AE2F79F004192FE /* Debug */,
@@ -621,7 +685,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84A3C7692AE2F79F004192FE /* Build configuration list for PBXNativeTarget "nl.moosmann.biancaUITests" */ = {
+		84A3C7692AE2F79F004192FE /* Build configuration list for PBXNativeTarget "721042UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84A3C76A2AE2F79F004192FE /* Debug */,

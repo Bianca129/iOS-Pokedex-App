@@ -1,0 +1,19 @@
+"loading" = "Loading...";
+"errorLoadingIMG" = "Error loading image: ";
+"errorUnknown" = "Unknown Phase";
+
+"imageLoadingError" = "Image Load Error";
+"name"= "Name";
+"base" = "Base";
+"weight" = "Weight";
+"height" = "Height";
+"types" = "Types";
+"abilities" = "Abilities";
+"noEvoData" = "No evolution data";
+
+"noFav" = "You have no favorite pokemons";
+"pokemons" = "Pokemons";
+"fav" = "Favorites";
+
+
+
