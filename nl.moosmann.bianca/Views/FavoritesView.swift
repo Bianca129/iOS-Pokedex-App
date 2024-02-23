@@ -2,8 +2,11 @@ import Foundation
 import SwiftUI
 
 struct FavoritesView: View {
+    
     @Binding var pokemon: [PokemonEntry]
     @State private var favoritePokemon: [PokemonEntry] = []
+    @State private var isLoading = true
+
 
     let columns = [
         GridItem(.flexible(minimum: 150)),
@@ -11,19 +14,24 @@ struct FavoritesView: View {
     ]
 
     var body: some View {
-        ScrollView {
-            if favoritePokemon.isEmpty {
-                VStack{
-                    Text("noFav")
-                }
-                .padding()
-                .frame(maxWidth: .infinity, alignment: .leading)
-                
-                    
-            } else {
+            ScrollView {
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .purple))
+                        .scaleEffect(1.5)
+                        .onAppear {
+                            loadFavoritePokemon()
+                        }
+                } else if favoritePokemon.isEmpty {
+                    VStack {
+                        Text(NSLocalizedString("noFav", comment: "No favorites"))
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                } else {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(favoritePokemon, id: \.name) { pokemon in
-                        NavigationLink(destination: PokemonDetailView(pokemon: pokemon)) {
+                        NavigationLink(destination: PokemonDetail(pokemon: pokemon)) {
                             VStack {
                                 PokemonImage(imageLink: pokemon.url, pokemonName: pokemon.name.capitalized)
                                     .frame(width: 170, height: 100)
@@ -51,5 +59,7 @@ struct FavoritesView: View {
 
     func loadFavoritePokemon() {
         favoritePokemon = pokemon.filter { UserDefaults.standard.bool(forKey: "liked_\($0.name)") }
+        isLoading = false
+
     }
 }

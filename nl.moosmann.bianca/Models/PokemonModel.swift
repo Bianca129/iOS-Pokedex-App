@@ -2,6 +2,8 @@ import Foundation
 
 struct Pokemon : Codable{
     var results: [PokemonEntry]
+    let next : String?
+    var count : Int
 }
 
 struct PokemonEntry: Codable, Identifiable, Hashable {

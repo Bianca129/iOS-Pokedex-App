@@ -1,0 +1,45 @@
+"loading" = "Loading...";
+"errorLoadingIMG %@" = "Error loading image: %@";
+"errorUnknown" = "Unknown Phase";
+
+"imageLoadingError" = "Image Load Error";
+"name"= "Name";
+"base" = "Base";
+"weight" = "Weight";
+"height" = "Height";
+"types" = "Types";
+"abilities" = "Abilities";
+"noEvoData" = "No evolution data";
+
+"noFav" = "You have no favorite pokemons";
+"pokemons" = "Pokemons";
+"fav" = "Favorites";
+
+"errorSprite" = "Error getting sprite or invalid data received.";
+"noData" = "No data received";
+"errorDecode %@" = "Error decoding data: %@";
+"invalideUrl %@" = "Invalid URL: %@";
+"errorFetch %@" = "Error fetching data: %@";
+
+"noDataFetched" = "No Pokémon data fetched.";
+"errorDataFetched" = "Error fetching data.";
+
+"share %@" = "Check out this Pokémon: %@";
+
+"allPokemons" = "All Pokémon's";
+
+"InvalidURLError" = "Invalid URL";
+"NetworkError" = "Network error: %@";
+"NoDataError" = "No data received";
+"DecodingError" = "Error decoding data: %@";
+
+"loadingImage" = "Loading image...";
+"noPhoto" = "No photo";
+"unknownError" = "Unknown error";
+"errorTitle" = "Error";
+"okButton" = "OK";
+
+"errorFetchingDetails" = "Error fetching details: %@";
+"evolutionDataFetchError" = "Error fetching evolution data";
+
+

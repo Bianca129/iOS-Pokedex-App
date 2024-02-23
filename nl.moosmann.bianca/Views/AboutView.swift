@@ -1,10 +1,3 @@
-//
-//  AboutView.swift
-//  nl.moosmann.bianca
-//
-//  Created by admin on 10/21/23.
-//
-
 import Foundation
 import SwiftUI
 
@@ -16,7 +9,7 @@ struct AboutView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 HStack {
-                    Text("Name").bold()
+                    Text("name").bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 16)
                     Text(pokemon.name.capitalized)
@@ -25,7 +18,7 @@ struct AboutView: View {
                         .foregroundColor(Color.gray)
                 }
                 HStack {
-                    Text("Base").bold()
+                    Text("base").bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 16)
                     Text(String(detailPokemon.base_experience))
@@ -34,7 +27,7 @@ struct AboutView: View {
                         .foregroundColor(Color.gray)
                 }
                 HStack {
-                    Text("Weight").bold()
+                    Text("weight").bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 16)
                     Text(String(detailPokemon.weight))
@@ -43,7 +36,7 @@ struct AboutView: View {
                         .foregroundColor(Color.gray)
                 }
                 HStack {
-                    Text("Height").bold()
+                    Text("height").bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 16)
                     Text(String(detailPokemon.height))
@@ -52,7 +45,7 @@ struct AboutView: View {
                         .foregroundColor(Color.gray)
                 }
                 HStack {
-                    Text("Types").bold()
+                    Text("types").bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 16)
                     Text(detailPokemon.types.map { $0.type.name }.joined(separator: ", "))
@@ -61,7 +54,7 @@ struct AboutView: View {
                         .foregroundColor(Color.gray)
                 }
                 HStack {
-                    Text("Abilities").bold()
+                    Text("abilities").bold()
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading, 16)
                     Text(detailPokemon.abilities.map { $0.ability.name }.joined(separator: ", "))

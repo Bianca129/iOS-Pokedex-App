@@ -9,6 +9,6 @@
 	<key>DerivedDataLocationStyle</key>
 	<string>Default</string>
 	<key>ShowSharedSchemesAutomaticallyEnabled</key>
-	<true/>
+	<false/>
 </dict>
 </plist>
