@@ -108,6 +108,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		639F42882B88A167004CC48A /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		849C29B82B2F9D66009170B5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +149,7 @@
 		84A3C7412AE2F79D004192FE /* nl.moosmann.bianca */ = {
 			isa = PBXGroup;
 			children = (
+				639F42882B88A167004CC48A /* Screenshots */,
 				63D606C52B572DE300C5E818 /* typeBackgroundColor.swift */,
 				849C29B82B2F9D66009170B5 /* Models */,
 				84A3C7722AE2F932004192FE /* Views */,
